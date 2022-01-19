@@ -31,7 +31,7 @@ def countFunction(county_id, name):
 
     # gets the html of each Welsh county
     url = requests.get(
-        "https://greattasteawards.co.uk/results"+str(year)+"?_token=8c3gzxgcKmBFflUOBlAITyxSMrHPeVhdRdcofLli&sort_options_limit=50&sort_options_sort_direction=desc&sort_options_sort_by=rating&Keyword=&mg_rating_id=&mg_category_id=&country_id=&county_id="+str(county_id)+"&filter=Search"
+        "https://greattasteawards.co.uk/results"+str(year)+"?_token=8c3gzxgcKmBFflUOBlAITyxSMrHPeVhdRdcofLli&sort_options_limit=500&sort_options_sort_direction=desc&sort_options_sort_by=rating&Keyword=&mg_rating_id=&mg_category_id=&country_id=&county_id="+str(county_id)+"&filter=Search"
         )
     bsurl = BeautifulSoup(url.text, "html.parser")
     
